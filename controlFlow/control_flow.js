@@ -51,3 +51,18 @@ let isAuthenticated = true;
  let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication status: ", authenticationStatus);
+
+let orgMember = "Subscription only"
+let benefits;
+
+if (orgMember === "Employee") {
+    benefits = "Ernährungsdienste";
+} else if ( orgMember === "Subscribed member") {
+    benefits = "Ernährungsdienste and personal interaction";
+} else if ( orgMember === "Subscription only") {
+    benefits = "Patially Ernährungsdienste";
+} else {
+    benefits = "Pls. subscribe first"
+}
+
+console.log("Your benefits are: ", benefits);
