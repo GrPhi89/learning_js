@@ -10,7 +10,7 @@ const globalConst = "Ich bin eine globale Konstante";
     const blockConst = "Ich bin eine block-scope const";
 }
 
-// Globaer Gültigkeitsbereich
+// Globaler Gültigkeitsbereich
 
 console.log(globalVar); //Ausgabe: "Ich bin eine globale Variable"
 console.log(globalLet); //Ausgabe: "Ich bin auch global, aber mit let scope"
@@ -22,6 +22,7 @@ console.log(globalConst); //Ausgabe: "Ich bin eine globale Konstante"
 //console.log(blockLet); //Ausgabe: "Ich bin ein block-scope let"
 //console.log(blockConst); //Ausgabe: "Ich bin eine block-scope const"
 
+/*
 function show(){
     var functionVar = "Ich bin eine block-scope Variable";
     let functionLet = "Ich bin ein block-scope let";
@@ -32,3 +33,22 @@ function show(){
     console.log(functionVar); // Wirft ReferenceError
     console.log(functionLet); // Wirft ReferenceError
     console.log(functionConst); // Wirft ReferenceError
+*/ 
+
+//New Block
+
+{
+    var testVar = "Aussage 1 var";
+    let testLet = "Aussage 1 let";
+    const testConst = "Aussage 1 const";
+
+    testVar = "Aussage 2 var";
+    testLet = "Aussage 2 let"
+    testConst = "Aussage 2 const";
+
+    console.log(testVar);
+    console.log(testLet);
+    console.log(testConst);
+}
+
+
